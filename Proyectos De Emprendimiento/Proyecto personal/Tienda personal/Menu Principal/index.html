@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Diego Velázquez">
+  <meta name="description" content="Como hacer un header dinamico con HTML, CSS y Javascript - Templune">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Ionic icons -->
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+
+  <title>Juan | Tienda Online</title>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container">
+      <a class="navbar-brand text-light font-weight-bold" href="http://templune.com/">Menu Principal</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="icon ion-md-menu lead text-light"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mr-2">
+            <a class="nav-link text-light" href="#">Inicio</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link text-light" href="#">Servicios</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link text-light" href="#">Portafolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light btn btn-primary py-1" href="#">Inicia sesión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero-container" class="position-relative text-light">
+    <div id="hero-background"></div>
+      <div id="hero-content" class="container h-100">
+        <div class="row no-gutters h-100 d-flex">
+          <div id="hero-text" class="col-md-6 align-self-center">
+            <h1 class="display-1 font-weight-bold mb-4">Aumenta tus ventas</h1>
+            <p class="lead mb-5">El editor de video en línea en el que confían los creadores de contenido para crear videos profesionales en minutos.
+            </p>
+            <a href="#" class="btn btn-primary">Comienza a ahorrar ahora!</a>
+          </div>
+         <div class="col-md-6 img-container align-self-center h-100">
+            <img src="assets/img/iphone.svg" id="hero-img" class="position-absolute">
+            <img src="assets/img/lines.svg" id="lines" class="spin position-absolute">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+<script>
+  window.onload = function () {
+    setTimeout(function () {
+    document.getElementById('hero-background').style.width = '100%';
+    }, 1500);
+    setTimeout(function () {
+      document.getElementById('hero-text').style.opacity = '1';
+    }, 2500);
+    setTimeout(function () {
+      document.getElementById('hero-img').style.opacity = '1';
+    }, 3500);
+    setTimeout(function () {
+      document.getElementById('lines').style.opacity = '1';
+    },4500);
+  };
+</script>
+
+</html>
